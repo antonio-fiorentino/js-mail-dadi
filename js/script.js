@@ -10,9 +10,12 @@ if(document. getElementById('bottone'). clicked == true) {
   var min = 1;
   var max = 6;
 
-  var numeroUtente = Math.floor(Math.random() * (max + 1 - min) + min)
-  var numeroPc = Math.floor(Math.random() * (max + 1 - min) + min)
+  var numeroUtente = Math.floor(Math.random() * (max + 1 - min) + min);
+  var numeroPc = Math.floor(Math.random() * (max + 1 - min) + min);
 
-  console.log(numeroUtente)
-  console.log(numeroPc)
+  
+
+
+  console.log(numeroUtente);
+  console.log(numeroPc);
 }
