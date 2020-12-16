@@ -26,22 +26,22 @@ for (var i = 0; i <= emailValide.length; i++) {
   }
 }
 // se l'email è corretta iniziarà la partita
-if (!controlloEmail) {
-  inizio.innertext ='Clicca qui per incominciare la partita';
+if (controlloEmail) {
+  inizio.innerText ='Clicca qui per incominciare la partita';
   inizio.addEventListener('click', function(){
 
-      dadopc.innertext = 'PC  ' + numeroPc;
-      dadoutente.innertext = 'user  ' + numeroUtente;
+      dadopc.innerText = 'PC  ' + numeroPc;
+      dadoutente.innerText = 'user  ' + numeroUtente;
 
       if (numeroUtente > numeroPc) {
-        risultato.innertext = 'Bravo hai vinto, la fortuna ti sorride';
+        risultato.innerText = 'Bravo hai vinto, la fortuna ti sorride';
       }else if (numeroPc > numeroUtente) {
-        risultato.innertext = 'Peccato hai perso, ritenta sarai più fortunanto';
+        risultato.innerText = 'Peccato hai perso, ritenta sarai più fortunanto';
       }else {
-        risultato.innertext = 'Pareggio, nessuno di noi guadagna';
+        risultato.innerText = 'Pareggio, nessuno di noi guadagna';
       }
     })
 // Email non corretta
 }else{
-  errore.innertext = 'E-mail non corretta';
+  errore.innerText = 'E-mail non corretta';
 }
