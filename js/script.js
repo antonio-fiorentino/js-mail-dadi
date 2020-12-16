@@ -15,6 +15,7 @@ var numeroPc = Math.floor(Math.random() * (max + 1 - min) + min);
 console.log(numeroUtente);
 console.log(numeroPc);
 console.log(email);
+console.log(emailValide[i]);
 
 
 var controlloEmail = false;
@@ -25,7 +26,7 @@ for (var i = 0; i <= emailValide.length; i++) {
   }
 }
 // se l'email è corretta iniziarà la partita
-if (controlloEmail) {
+if (!controlloEmail) {
   inizio.innertext ='Clicca qui per incominciare la partita';
   inizio.addEventListener('click', function(){
 
