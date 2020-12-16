@@ -11,8 +11,10 @@ var min = 1;
 var max = 6;
 var numeroUtente = Math.floor(Math.random() * (max + 1 - min) + min);
 var numeroPc = Math.floor(Math.random() * (max + 1 - min) + min);
+
 console.log(numeroUtente);
 console.log(numeroPc);
+console.log(email);
 
 
 var controlloEmail = false;
@@ -28,7 +30,7 @@ if (controlloEmail) {
   inizio.addEventListener('click', function(){
 
       dadopc.innertext = 'PC  ' + numeroPc;
-      dadoutente.innertext = 'user  ' + nemeroUtente;
+      dadoutente.innertext = 'user  ' + numeroUtente;
 
       if (numeroUtente > numeroPc) {
         risultato.innertext = 'Bravo hai vinto, la fortuna ti sorride';
